@@ -1,3 +1,4 @@
+import ClickCounter from "./components/clickcounters";
 import Image from "next/image";
 
 export default function Home() {
@@ -95,6 +96,9 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="px-8 py-10 text-center text-sm text-gray-500 border-t">
         © 2026 MySite. Built while learning.
+      <div className="mt-4">
+        <ClickCounter />
+      </div>
       </footer>
     </main>
   );
