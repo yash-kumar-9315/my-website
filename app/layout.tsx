@@ -4,6 +4,9 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import ScrollProgress from "./components/scrollprogress";
+import { Analytics } from "@vercel/analytics/react";
+import CommandPalette from "./components/commandpalette";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +37,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
+          <CommandPalette />
           <div className="flex-1 pt-16">{children}</div>
+          <ScrollProgress />
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
