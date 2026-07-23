@@ -50,7 +50,7 @@ export default function ContactForm() {
       <textarea
         name="message"
         placeholder="Your message"
-        rows={4}
+        rows={2}
         value={form.message}
         onChange={handleChange}
         required

@@ -3,24 +3,39 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background:#ffffff;
+    --foreground:#171717;
+    --surface: #f0fdfa;        /* = teal-50, footer bg light */
+    --surface-alt: #ffffff;    /* navbar/card bg light, slight contrast */
+    --accent: #0d9488;         /* teal-600, use for links/buttons/highlights */
+    --accent-soft: rgba(45,212,191,0.15); /* teal-400 @ 15%, glow/gradient use */
+    --border: rgba(23,23,23,0.1);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+    --background:#0a0a0a;
+    --foreground:#ededed;
+    --surface: #171717;        /* = neutral-900, footer bg dark */
+    --surface-alt: #0a0a0a;
+    --accent: #2dd4bf;         /* teal-400, pop more in dark */
+    --accent-soft: rgba(45,212,191,0.12);
+    --border: rgba(255,255,255,0.1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background:var(--background);
+    --color-foreground:var(--foreground);
+    --color-surface:var(--surface);
+    --color-surface-alt:var(--surface-alt);
+    --color-accent:var(--accent);
+    --color-accent-soft:var(--accent-soft);
+    --color-border:var(--border);
+    --font-sans:var(--font-geist-sans);
+    --font-mono:var(--font-geist-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background:var(--background);
+    color:var(--foreground);
+    font-family:Arial,Helvetica,sans-serif;
 }

@@ -22,9 +22,9 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-teal-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
+    <footer className="relative overflow-hidden bg-background text-foreground border-t border-border">
       {/* soft gradient wash, replaces Realm's wave art */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-teal-200/40 via-transparent to-transparent dark:from-teal-900/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-accent-soft via-transparent to-transparent pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-8 pt-20 pb-10">
         {/* mini-hero */}
@@ -33,7 +33,7 @@ export default function Footer() {
         </h2>
         
           <a href="#contact"
-          className="inline-block mt-6 px-5 py-3 bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 rounded-lg font-medium hover:opacity-90"
+          className="inline-block mt-6 px-5 py-3 bg-accent text-white rounded-lg font-medium hover:opacity-90"
         >
           Get in touch
         </a>
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* bottom bar */}
-        <div className="flex items-center justify-between mt-16 pt-6 border-t border-neutral-300 dark:border-neutral-700">
+        <div className="flex items-center justify-between mt-16 pt-6 border-border">
           <span className="font-semibold">Yash</span>
           <div className="flex gap-4">
             <a href="mailto:you@email.com" aria-label="Email" className="hover:opacity-70"><FiMail size={18} /></a>
