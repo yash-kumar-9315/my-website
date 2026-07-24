@@ -23,7 +23,7 @@ export function Hero() {
 
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-1">
+      <div className="absolute inset-0.5">
         {mounted && (
           <img
             src={heroImage}
