@@ -31,7 +31,7 @@ export function Hero() {
             className="w-full h-full object-cover"
           />
         )}
-        <div className="absolute inset-1 bg-black/40" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <motion.div
