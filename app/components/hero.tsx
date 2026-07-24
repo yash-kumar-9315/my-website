@@ -19,7 +19,7 @@ export function Hero() {
   useEffect(() => setMounted(true), []);
 
   const heroImage =
-    resolvedTheme === "dark" ? "/hero-dark.jpg" : "/hero-light.jpg";
+    resolvedTheme === "dark" ? "/dark.jpg" : "/light.jpg";
 
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
@@ -45,7 +45,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p variants={item} className="text-lg text-white/70 mt-4">
-          Building things for the <span className="text-accent font-medium">web</span>.
+          Building things for the <span className="text-accent text-glow font-medium">web</span>.
         </motion.p>
 
         <motion.div
