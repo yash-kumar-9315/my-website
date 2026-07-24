@@ -23,7 +23,7 @@ export function Hero() {
 
   return (
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
+      <div className="absolute inset-1">
         {mounted && (
           <img
             src={heroImage}
@@ -31,7 +31,7 @@ export function Hero() {
             className="w-full h-full object-cover"
           />
         )}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-1 bg-black/40" />
       </div>
 
       <motion.div
