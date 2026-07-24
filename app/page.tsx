@@ -60,16 +60,30 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <FadeIn>
-        <section id="contact" className="px-8 py-20">
-          <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
-            Let&apos;s talk
-          </span>
-          <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
-          <p className="text-center text-foreground/60 mb-8">Have a question or want to connect? Reach out below.</p>
-          <ContactForm />
-        </section>
-      </FadeIn>
+        <section id="contact" className="relative px-8 py-20 overflow-hidden min-h-[500px]">
+         <div className="absolute inset-0.5 -z-0">
+          <Image
+           src="/contact.jpg"
+           alt=""
+           fill
+           sizes="100vw"
+           className="object-cover"
+           />
+          <div className="absolute inset-0 bg-background/10" />
+        </div>
 
-    </main>
-  );
+        <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
+          Let&apos;s talk
+        </span>
+        <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+        <p className="text-center text-foreground/60 mb-8">Have a question or want to connect? Reach out below.</p>
+
+       {/* glass card */}
+        <div className="max-w-md mx-auto rounded-2xl border border-border bg-surface-alt/40 backdrop-blur-xl shadow-lg p-8 shadow-accent-soft/20">
+        <ContactForm />
+      </div>
+    </section>
+  </FadeIn>
+      </main>
+    );
 }
