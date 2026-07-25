@@ -7,6 +7,7 @@ import Navbar from "./components/navbar";
 import ScrollProgress from "./components/scrollprogress";
 import { Analytics } from "@vercel/analytics/react";
 import CommandPalette from "./components/commandpalette";
+import type { Viewport } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "MySite — Yash Kumar",
