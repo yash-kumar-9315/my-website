@@ -50,7 +50,7 @@ export function Hero() {
 
         <motion.div
           variants={item}
-          className="mt-6 flex items-center justify-center gap-2 max-w-md mx-auto"
+          className="mt-6 flex flex=col sm:flex-row items-center justify-center gap-2 max-w-md mx-auto w-full px-4"
         >
           <input
             type="email"

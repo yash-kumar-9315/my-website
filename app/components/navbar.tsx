@@ -51,7 +51,7 @@ export default function Navbar() {
     >
       <span className="text-sm font-bold">MySite.dev</span>
 
-      <div className="flex gap-6 text-sm text-foreground/60">
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-sm text-foreground/60">
         {LINKS.map((link) => (
           <a
             key={link.href}
