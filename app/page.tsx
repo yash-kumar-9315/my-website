@@ -60,8 +60,8 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <FadeIn>
-        <section id="contact" className="relative px-8 py-20 overflow-hidden min-h-[500px]">
-         <div className="absolute inset-0 -z-0">
+        <section id="contact" className="relative px-8 pt-24 pb-8 overflow-hidden scroll-mt-16">
+         <div className="absolute inset-0.5 -z-0 rounded-3xl overflow-hidden">
           <Image
            src="/contact.jpg"
            alt=""
