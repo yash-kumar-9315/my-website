@@ -19,10 +19,10 @@ export default function Home() {
           <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
             Currently learning
           </span>
-          <h2 className="text-3xl font-bold mb-6 text-center">What I&apos;m learning</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-foreground">What I&apos;m learning</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="p-6 bg-surface-alt rounded-xl shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg border border-border">
-              <h3 className="font-semibold mb-2">Next.js</h3>
+              <h3 className="font-semibold mb-2 text-foreground">Next.js</h3>
               <p className="text-foreground/60 text-sm">The framework powering this site.</p>
             </div>
             <div className="p-6 bg-surface-alt rounded-xl shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg border border-border">
@@ -40,7 +40,7 @@ export default function Home() {
       {/* WORK SECTION */}
       <FadeIn>
         <section id="work" className="px-8 py-20">
-          <h2 className="text-3xl font-bold mb-10 text-center">My Work</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-foreground">My Work</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ma-w-4x1 mx-auto">
             <div className="aspect-video relative rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02] border border-border hover:border-accent">
               <Image src="/project1.jpg" alt="Project 1" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
@@ -75,7 +75,7 @@ export default function Home() {
         <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
           Let&apos;s talk
         </span>
-        <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-foreground">Get in Touch</h2>
         <p className="text-center text-foreground/60 mb-8">Have a question or want to connect? Reach out below.</p>
 
        {/* glass card */}

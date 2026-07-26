@@ -15,7 +15,7 @@
 
 .dark {
     --background:#0a0a0a;
-    --foregrounds:#ededed;
+    --foreground:#ededed;
     --surface: #171717;        /* = neutral-900, footer bg dark */
     --surface-alt: #0a0a0a;
     --accent: #3b82f6;         /* blue-500, was teal */

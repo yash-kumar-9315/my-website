@@ -28,7 +28,7 @@ export default function Footer() {
 
       <div className="relative max-w-6xl mx-auto px-8 pt-20 pb-10">
         {/* mini-hero */}
-        <h2 className="text-4xl sm:text-5xl font-bold leading-tight max-w-lg">
+        <h2 className="text-4xl sm:text-5xl font-bold leading-tight max-w-lg text-foreground">
           Let&apos;s build something together.
         </h2>
         
@@ -48,7 +48,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {col.links.map((l) => (
                   <li key={l.label}>
-                    <Link href={l.href} className="text-sm hover:opacity-70">
+                    <Link href={l.href} className="text-sm hover:opacity-70 text-foreground">
                       {l.label}
                     </Link>
                   </li>
