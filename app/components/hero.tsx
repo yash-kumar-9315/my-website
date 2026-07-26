@@ -55,7 +55,7 @@ export function Hero() {
           <input
             type="email"
             placeholder="Enter your email"
-            className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 outline-none"
+            className="flex-1 min-w-0 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 outline-none"
           />
           <button className="px-6 py-3 rounded-full bg-accent text-white font-medium whitespace-nowrap">
             Open account
