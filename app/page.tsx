@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FadeIn } from "./components/fadein";
 import { Hero } from "./components/hero";
 import ContactForm from "./components/contactform";
+import ContactBg from "./components/contactbg";
 
 export default function Home() {
   return (
@@ -59,31 +60,28 @@ export default function Home() {
       </FadeIn>
 
       {/* CONTACT SECTION */}
-      <FadeIn>
-        <section id="contact" className="relative px-8 pt-24 pb-8 overflow-hidden scroll-mt-16 min-h-[500px]">
-         <div className="absolute inset-0.5 -z-0 rounded-3xl overflow-hidden">
-          <Image
-           src="/contact.jpg"
-           alt=""
-           fill
-           sizes="100vw"
-           className="object-cover"
-           />
-          <div className="absolute inset-0 bg-background/10" />
-        </div>
+<FadeIn>
+  <section id="contact" className="relative px-8 pt-24 pb-8 overflow-hidden scroll-mt-16 min-h-[500px]">
+    
+    {/* background image layer */}
+    <div className="absolute inset-0.5 z-0 rounded-3xl overflow-hidden">
+      <ContactBg />
+      <div className="absolute inset-0 bg-background/20" />
+    </div>
 
-        <span className="inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
-          Let&apos;s talk
-        </span>
-        <h2 className="text-3xl font-bold mb-6 text-center text-foreground">Get in Touch</h2>
-        <p className="text-center text-foreground/60 mb-8">Have a question or want to connect? Reach out below.</p>
+    {/* text layer, on top */}
+    <span className="relative z-10 inline-block text-xs font-medium px-3 py-1 rounded-full bg-accent-soft text-accent mb-4">
+      Let&apos;s talk
+    </span>
+    <h2 className="relative z-10 text-3xl font-bold text-white mb-6 text-center text-foreground">Get in Touch</h2>
+    <p className="relative z-10 text-center text-foreground/60 text-white mb-8">Have a question or want to connect? Reach out below.</p>
 
-       {/* glass card */}
-        <div className="max-w-md mx-auto rounded-2xl border border-border bg-surface-alt/40 backdrop-blur-xl shadow-lg p-8 shadow-accent-soft/20">
-        <ContactForm />
-      </div>
-    </section>
-  </FadeIn>
+    {/* glass card */}
+    <div className="relative z-10 max-w-md mx-auto rounded-2xl border border-border bg-surface-alt/40 backdrop-blur-xl shadow-lg p-8 shadow-accent-soft/20">
+      <ContactForm />
+    </div>
+  </section>
+</FadeIn>
       </main>
     );
 }
