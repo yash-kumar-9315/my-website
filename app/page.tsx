@@ -5,7 +5,7 @@ import ContactForm from "./components/contactform";
 
 export default function Home() {
   return (
-    <main className="n-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground">
       {/* HERO SECTION */}
       <FadeIn>
        <section className="flex flex-col items-center justify-center text-center">
@@ -41,7 +41,7 @@ export default function Home() {
       <FadeIn>
         <section id="work" className="px-8 py-20">
           <h2 className="text-3xl font-bold mb-10 text-center text-foreground">My Work</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ma-w-4x1 mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4x1 mx-auto">
             <div className="aspect-video relative rounded-xl overflow-hidden transition-transform duration-300 hover:scale-[1.02] border border-border hover:border-accent">
               <Image src="/project1.jpg" alt="Project 1" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
       <FadeIn>
-        <section id="contact" className="relative px-8 pt-24 pb-8 overflow-hidden scroll-mt-16">
+        <section id="contact" className="relative px-8 pt-24 pb-8 overflow-hidden scroll-mt-16 min-h-[500px]">
          <div className="absolute inset-0.5 -z-0 rounded-3xl overflow-hidden">
           <Image
            src="/contact.jpg"
