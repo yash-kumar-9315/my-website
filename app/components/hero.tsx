@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const container = {
   hidden: {},
@@ -25,12 +26,15 @@ export function Hero() {
     <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0.5 rounded-3xl overflow-hidden">
         {mounted && (
-          <img
-            src={heroImage}
-            alt="background"
-            className="w-full h-full object-cover"
-          />
-        )}
+  <Image
+    src={heroImage}
+    alt="background"
+    fill
+    priority
+    sizes="100vw"
+    className="object-cover"
+  />
+)}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
